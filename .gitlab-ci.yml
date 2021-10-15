@@ -1,0 +1,12 @@
+stages:
+    - deploy
+
+deploy:
+    stage: deploy
+    tags:
+        - content-api-master
+    only:
+        - master
+    script:
+        - docker-compose down
+        - docker-compose up --build -d
