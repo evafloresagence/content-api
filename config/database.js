@@ -15,7 +15,7 @@ module.exports = ({ env }) => ({
         database: env('DATABASE_NAME', 'marketing'),
         username: env('DATABASE_USERNAME', 'postgres'),
         password: env('DATABASE_PASSWORD', 'postgres1*aica!'),
-        schema: env('DATABASE_SCHEMA', 'public'), // Not Required
+        schema: env('DATABASE_SCHEMA', 'public'), // Not Required*/
         /*ssl: {
           rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
         },*/
