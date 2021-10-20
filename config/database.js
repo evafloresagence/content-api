@@ -6,10 +6,10 @@ module.exports = ({ env }) => ({
       settings: {
         client: 'postgres',
         host: env('DATABASE_HOST', '10.25.27.74'),
-        port: env.int('DATABASE_PORT'),
-        database: env('DATABASE_NAME'),
-        username: env('DATABASE_USERNAME'),
-        password: env('DATABASE_PASSWORD'),
+        port: env.int('DATABASE_PORT', '5432'),
+        database: env('DATABASE_NAME', 'marketing'),
+        username: env('DATABASE_USERNAME', 'postgres'),
+        password: env('DATABASE_PASSWORD', 'postgres1*aica!'),
         /*ssl: {
           rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
         },*/
