@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/categorias": {
+    "/lineas": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the lineas's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve lineas document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Categoria"
+                    "$ref": "#/components/schemas/Lineas"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Categoria"
+          "Lineas"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new lineas record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve lineas document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categoria"
+                  "$ref": "#/components/schemas/Lineas"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Categoria"
+          "Lineas"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategoria"
+                "$ref": "#/components/schemas/NewLineas"
               }
             }
           }
         }
       }
     },
-    "/categorias/count": {
+    "/lineas/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the number of lineas documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve lineas document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Categoria"
+          "Lineas"
         ],
         "parameters": []
       }
     },
-    "/categorias/{id}": {
+    "/lineas/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one lineas record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve lineas document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categoria"
+                  "$ref": "#/components/schemas/Lineas"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Categoria"
+          "Lineas"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single lineas record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve lineas document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categoria"
+                  "$ref": "#/components/schemas/Lineas"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Categoria"
+          "Lineas"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategoria"
+                "$ref": "#/components/schemas/NewLineas"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single lineas record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single lineas based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Categoria"
+          "Lineas"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Categoria": {
+      "Lineas": {
         "required": [
           "id"
         ],
@@ -580,56 +580,13 @@
               }
             }
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nombre": {
-                  "type": "string"
-                },
-                "productos": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "locale": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewCategoria": {
+      "NewLineas": {
         "properties": {
           "nombre": {
             "type": "string"
@@ -639,15 +596,6 @@
             "items": {
               "type": "string"
             }
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "locale": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -665,7 +613,7 @@
   },
   "tags": [
     {
-      "name": "Categoria"
+      "name": "Lineas"
     }
   ]
 }

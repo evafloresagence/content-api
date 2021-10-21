@@ -71,6 +71,15 @@
         }
       },
       "type": "richtext"
+    },
+    "categorias": {
+      "collection": "categoria",
+      "via": "productos",
+      "dominant": true
+    },
+    "linea": {
+      "model": "lineas",
+      "via": "productos"
     }
   }
 }
