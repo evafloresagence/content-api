@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/servicio-metrologias",
+      "handler": "servicio-metrologia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/servicio-metrologias/count",
+      "handler": "servicio-metrologia.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/servicio-metrologias/:id",
+      "handler": "servicio-metrologia.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/servicio-metrologias",
+      "handler": "servicio-metrologia.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/servicio-metrologias/:id",
+      "handler": "servicio-metrologia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/servicio-metrologias/:id",
+      "handler": "servicio-metrologia.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

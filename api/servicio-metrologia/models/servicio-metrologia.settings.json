@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "servicio_metrologias",
+  "info": {
+    "name": "Servicio Metrología"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "imagen": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "precioCup": {
+      "type": "decimal"
+    },
+    "precioMlc": {
+      "type": "decimal"
+    }
+  }
+}
