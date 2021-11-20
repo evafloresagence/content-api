@@ -2,12 +2,18 @@
   "kind": "collectionType",
   "collectionName": "lineas",
   "info": {
-    "name": "Líneas"
+    "name": "Líneas",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "created_by",
+      "updated_by",
+      "producto"
+    ]
   },
   "pluginOptions": {},
   "attributes": {
@@ -15,6 +21,7 @@
       "type": "string"
     },
     "productos": {
+      "private": true,
       "via": "linea",
       "collection": "producto"
     }

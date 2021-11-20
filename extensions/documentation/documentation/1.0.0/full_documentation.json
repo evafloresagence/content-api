@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/25/2021 3:45:19 PM"
+    "x-generation-date": "11/20/2021 2:53:11 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5468,61 +5468,6 @@
           "nombre": {
             "type": "string"
           },
-          "productos": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nombre": {
-                  "type": "string"
-                },
-                "imagen": {
-                  "type": "string"
-                },
-                "rcp": {
-                  "type": "string"
-                },
-                "homeopatico": {
-                  "type": "boolean"
-                },
-                "descripcion": {
-                  "type": "string"
-                },
-                "categorias": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "linea": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "localizations": {
             "type": "array",
             "items": {
@@ -5614,61 +5559,6 @@
           },
           "nombre": {
             "type": "string"
-          },
-          "productos": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nombre": {
-                  "type": "string"
-                },
-                "imagen": {
-                  "type": "string"
-                },
-                "rcp": {
-                  "type": "string"
-                },
-                "homeopatico": {
-                  "type": "boolean"
-                },
-                "descripcion": {
-                  "type": "string"
-                },
-                "categorias": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "linea": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           },
           "published_at": {
             "type": "string",

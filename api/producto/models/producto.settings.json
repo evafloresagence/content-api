@@ -73,13 +73,13 @@
       "type": "richtext"
     },
     "categorias": {
-      "collection": "categoria",
       "via": "productos",
+      "collection": "categoria",
       "dominant": true
     },
     "linea": {
-      "model": "lineas",
-      "via": "productos"
+      "via": "productos",
+      "model": "lineas"
     }
   }
 }
