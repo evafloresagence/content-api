@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/valor-empresas",
+      "handler": "valor-empresa.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valor-empresas/count",
+      "handler": "valor-empresa.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valor-empresas/:id",
+      "handler": "valor-empresa.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/valor-empresas",
+      "handler": "valor-empresa.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/valor-empresas/:id",
+      "handler": "valor-empresa.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/valor-empresas/:id",
+      "handler": "valor-empresa.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
