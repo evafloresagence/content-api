@@ -6,5 +6,5 @@ module.exports = ({ env }) => ({
       secret: env('ADMIN_JWT_SECRET', 'e2094a5cedc0c0581fab009d1e7e2af9'),
     },
   },
-  url: 'http://marketing.aica.cu'
+  url: 'http://localhost:9090'//'http://marketing.aica.cu'
 });

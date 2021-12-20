@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/14/2021 1:15:05 PM"
+    "x-generation-date": "12/20/2021 5:36:11 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9462,7 +9462,8 @@
             "type": "number"
           },
           "precioMlc": {
-            "type": "number"
+            "type": "number",
+            "default": 20
           },
           "published_at": {
             "type": "string",
@@ -9482,7 +9483,8 @@
             "type": "number"
           },
           "precioMlc": {
-            "type": "number"
+            "type": "number",
+            "default": 20
           },
           "published_at": {
             "type": "string",

@@ -615,7 +615,8 @@
             "type": "number"
           },
           "precioMlc": {
-            "type": "number"
+            "type": "number",
+            "default": 20
           },
           "published_at": {
             "type": "string",
@@ -635,7 +636,8 @@
             "type": "number"
           },
           "precioMlc": {
-            "type": "number"
+            "type": "number",
+            "default": 20
           },
           "published_at": {
             "type": "string",
