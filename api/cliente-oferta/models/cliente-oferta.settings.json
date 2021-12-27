@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cliente_ofertas",
+  "info": {
+    "name": "Cliente Oferta",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cliente": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "oferta": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}
