@@ -1,19 +1,18 @@
 {
   "paths": {
-    "/servicio-metrologias": {
+    "/metrologia": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the metrologia's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve metrologia document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Metrologia"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Servicio-metrologia"
+          "Metrologia"
         ],
         "parameters": [
           {
@@ -193,210 +192,16 @@
           }
         ]
       },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Servicio-metrologia"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewServicio-metrologia"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/servicio-metrologias/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Servicio-metrologia"
-        ],
-        "parameters": []
-      }
-    },
-    "/servicio-metrologias/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Servicio-metrologia"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single metrologia record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve metrologia document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Metrologia"
                 }
               }
             }
@@ -434,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Servicio-metrologia"
+          "Metrologia"
         ],
         "requestBody": {
           "description": "",
@@ -442,30 +247,19 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewServicio-metrologia"
+                "$ref": "#/components/schemas/NewMetrologia"
               }
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single metrologia record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single metrologia based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,26 +302,15 @@
         },
         "summary": "",
         "tags": [
-          "Servicio-metrologia"
+          "Metrologia"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Servicio-metrologia": {
+      "Metrologia": {
         "required": [
           "id"
         ],
@@ -535,71 +318,39 @@
           "id": {
             "type": "string"
           },
-          "nombre": {
+          "nota_entrega": {
             "type": "string"
           },
-          "descripcion": {
-            "type": "string"
+          "vigencia": {
+            "type": "integer",
+            "default": 60
           },
-          "imagen": {
+          "localizations": {
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
+                "nota_entrega": {
                   "type": "string"
                 },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
+                "vigencia": {
                   "type": "integer"
                 },
-                "height": {
-                  "type": "integer"
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
+                "locale": {
                   "type": "string"
                 },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
+                "published_at": {
                   "type": "string"
                 },
                 "created_by": {
@@ -611,16 +362,8 @@
               }
             }
           },
-          "precioCup": {
-            "type": "number"
-          },
-          "precioMlc": {
-            "type": "number",
-            "default": 20
-          },
-          "entrega": {
-            "type": "integer",
-            "default": 60
+          "locale": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -628,24 +371,23 @@
           }
         }
       },
-      "NewServicio-metrologia": {
+      "NewMetrologia": {
         "properties": {
-          "nombre": {
+          "nota_entrega": {
             "type": "string"
           },
-          "descripcion": {
-            "type": "string"
-          },
-          "precioCup": {
-            "type": "number"
-          },
-          "precioMlc": {
-            "type": "number",
-            "default": 20
-          },
-          "entrega": {
+          "vigencia": {
             "type": "integer",
             "default": 60
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -661,5 +403,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Metrologia"
+    }
+  ]
 }

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/metrologia",
+      "handler": "metrologia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/metrologia",
+      "handler": "metrologia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/metrologia",
+      "handler": "metrologia.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
