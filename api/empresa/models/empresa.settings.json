@@ -1,8 +1,9 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "empresas",
   "info": {
-    "name": "Empresa"
+    "name": "Empresa",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -118,6 +119,14 @@
           "localized": true
         }
       }
+    },
+    "youtube_url": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
