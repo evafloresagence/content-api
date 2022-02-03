@@ -10,7 +10,7 @@ module.exports = ({ env }) => ({
       useSSL: env("MINIO_USE_SSL", false),
       folder: "upload",
       isDocker: true,
-      host: env("MINIO_HOST", '192.168.205.249')
+      host: env("MINIO_HOST", 'marketing.aica.cu')
     }
   }
 });
