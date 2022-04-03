@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "categorias",
   "info": {
-    "name": "Categoría",
+    "name": "Categorías",
     "description": ""
   },
   "options": {
@@ -25,8 +25,8 @@
       "type": "string"
     },
     "productos": {
-      "private": true,
       "via": "categorias",
+      "private": true,
       "collection": "producto"
     }
   }

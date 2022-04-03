@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "cliente_ofertas",
   "info": {
-    "name": "Cliente Oferta",
+    "name": "Ofertas",
     "description": ""
   },
   "options": {

@@ -30,8 +30,8 @@
       }
     },
     "productos": {
-      "private": true,
       "via": "linea",
+      "private": true,
       "collection": "producto"
     }
   }
