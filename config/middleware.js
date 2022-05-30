@@ -3,5 +3,8 @@ module.exports = ({env}) => ({
     cors: {
       enabled: true,
     },
+    hsts: {
+      enabled: false,
+    }
   }
 })
